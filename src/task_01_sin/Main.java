@@ -36,6 +36,34 @@ public class Main {
         }
         System.out.println(result);
         System.out.println(Math.sin(angleRad));
-    }
 
+    }
 }
+//public class Main {
+//    public static double sin(double x, int n) {
+//        double result = x;
+//        double term = x;
+//        int n2 = n * 2;
+//        for (int i = 3; i <= n2; i += 2) {
+//            term *= -x * x / ((i - 1) * i);
+//            result += term;
+//        }
+//        return result;
+//    }
+//
+//    public static void main(String... args) {
+//
+//        String degreeStr = args[0];
+//        int iterations = Integer.parseInt(args[1]);
+//
+//        double angleDeg = Double.parseDouble(degreeStr);
+//        double angleRad = (Math.PI/180) * angleDeg;
+//
+//        double sin = Math.sin(angleRad);
+//        System.out.println("Searching for sin(" + angleRad + ") = " + sin);
+//        for (int n = 2; n <= iterations; n++) {
+//            System.out.println(n + ": " + sin + " vs " + sin(angleRad, n) + " err: " + (sin(angleRad, n) - sin));
+//        }
+//    }
+//}
+
